@@ -1,0 +1,91 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f8ff; /* Ghost white */
+    animation: bgAnimation 15s linear infinite;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #1E90FF; /* Dodger blue */
+}
+
+.fact-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FFF8DC; /* Cornsilk */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: slideInUp 0.5s ease-out;
+}
+
+.fact {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #228B22; /* Forest green */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #FFD700; /* Gold */
+    color: #333; /* Dark gray */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #FFB90F; /* Dark golden rod */
+}
+
+.favorite-button {
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.favorite-button:hover {
+    background-color: #FFD700; /* Gold */
+}
+
+.favorite-button.favorited {
+    background-color: #E63946; /* Red */
+    color: #FFF;
+}
+
+@keyframes bgAnimation {
+    0% { background-color: #f8f8ff; }
+    50% { background-color: #FFF8DC; }
+    100% { background-color: #f8f8ff; }
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
