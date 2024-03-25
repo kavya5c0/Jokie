@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joke Creator</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="container">
+    <h1>Joke Creator</h1>
+    <div class="joke-container">
+        <h2>Random Joke</h2>
+        <div class="joke" id="joke"></div>
+        <div class="button-container">
+            <button class="button" id="getJokeBtn">Get Joke</button>
+            <button class="button" id="saveJokeBtn">Save Joke</button>
+            <button class="button" id="likeJokeBtn">Like Joke</button>
+            <button class="button" id="previousJokeBtn">Previous Joke</button>
+            <button class="button" id="nextJokeBtn">Next Joke</button>
+        </div>
+    </div>
+    <div class="saved-jokes-container">
+        <h2>Saved Jokes</h2>
+        <ul id="savedJokesList"></ul>
+    </div>
+    <div class="liked-jokes-container">
+        <h2>Liked Jokes</h2>
+        <ul id="likedJokesList"></ul>
+    </div>
+</div>
+
+<script src="index.js" async></script>
+</body>
+</html>
